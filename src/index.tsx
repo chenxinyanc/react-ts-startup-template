@@ -1,7 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { App } from './App';
+import { initializeIcons } from 'office-ui-fabric-react';
 
+initializeIcons();
 // Mount root component.
 const domRoot = document.querySelector("#react-root");
 ReactDOM.render(<App /> , domRoot);
