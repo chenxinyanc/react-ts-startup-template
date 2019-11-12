@@ -1,0 +1,9 @@
+{
+  "name": "react-ts-startup-template",
+  "version": "1.0.0",
+  "description": "A startup template with React, Webpack, and TypeScript.",
+  "main": "index.js",
+  "author": "xinyan",
+  "license": "MIT",
+  "private": true
+}
