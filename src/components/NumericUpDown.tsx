@@ -25,6 +25,10 @@ interface INumericUpDownStates {
     error?: string;
 }
 
+/**
+ * A simple numeric updown control.
+ * This is a class component.
+ */
 export class NumericUpDown extends React.Component<INumericUpDownProps, INumericUpDownStates> {
     public static defaultProps: Partial<INumericUpDownProps> = { min: 0, step: 1 };
     private currentTimeoutId: number | undefined;
@@ -86,8 +90,10 @@ export class NumericUpDown extends React.Component<INumericUpDownProps, INumeric
         }
         this.setState({ textBoxValue: text });
     }
+    /**
+     * Primary render function.
+     */
     public render() {
-        // Primary render function.
         return (<div className={classNames(classes.container, this.props.className)} style={this.props.style}>
             <div className={classes.field}>
                 <input
@@ -106,6 +112,9 @@ export class NumericUpDown extends React.Component<INumericUpDownProps, INumeric
             {this.state.error != null && (<div className={classes.error}>{this.state.error}</div>)}
         </div>);
     }
+    // Lifecycle methods
+    // http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+    // https://reactjs.org/docs/react-component.html#the-component-lifecycle
     public UNSAFE_componentWillReceiveProps(nextProps: Readonly<INumericUpDownProps>, nextStates: Readonly<INumericUpDownStates>) {
         // See https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops
         // The function is not deprecated, but marked "UNSAFE".
