@@ -6,6 +6,11 @@
   "author": "xinyan",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development"
+  },
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
