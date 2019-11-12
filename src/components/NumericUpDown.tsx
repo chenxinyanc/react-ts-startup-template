@@ -6,6 +6,8 @@ import classes from './NumericUpDown.scss';
  * Properties of NumericUpDown control.
  */
 export interface INumericUpDownProps {
+    className?: string;
+    style?: React.CSSProperties;
     value: number;
     min: number;
     max: number;
@@ -86,7 +88,7 @@ export class NumericUpDown extends React.Component<INumericUpDownProps, INumeric
     }
     public render() {
         // Primary render function.
-        return (<div className={classes.container}>
+        return (<div className={classNames(classes.container, this.props.className)} style={this.props.style}>
             <div className={classes.field}>
                 <input
                     type="textbox"
