@@ -1,0 +1,39 @@
+.container {
+    .field {
+        display: flex;
+        flex-direction: row;
+
+        .text-box {
+            flex-grow: 1;
+
+            &.up {
+                background: #ccffcc;
+            }
+
+            &.down {
+                background: #ffcccc;
+            }
+
+            &.invalid {
+                color: #ff0000;
+            }
+
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+
+            .spin-up,
+            .spin-down {
+                flex-grow: 1;
+                flex-shrink: 1;
+                min-height: 0;
+            }
+        }
+    }
+
+    .error {
+        color: #ff0000;
+    }
+}
