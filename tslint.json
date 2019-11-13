@@ -1,0 +1,26 @@
+{
+    "rules": {
+        "await-promise": [
+            true,
+            "Promise",
+            "PromiseLike"
+        ],
+        "eofline": true,
+        "member-access": true,
+        "member-ordering": [
+            true,
+            "fields-first"
+        ],
+        "no-duplicate-imports": true,
+        "no-duplicate-variable": true,
+        "no-floating-promises": true,
+        "no-import-side-effect": true,
+        "no-var-keyword": true,
+        "ordered-imports": true,
+        "quotemark": [
+            true,
+            "double"
+        ],
+        "semicolon": true
+    }
+}
