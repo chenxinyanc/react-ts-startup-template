@@ -26,7 +26,8 @@ export default function config(env: any, argv: Record<string, string>): webpack.
               /[/\\]test[/\\]/
             ],
             options: {
-              transpileOnly: true,
+              // You need https://www.npmjs.com/package/fork-ts-checker-webpack-plugin before enabling this.
+              // transpileOnly: true,
               experimentalWatchApi: true
             }
           },
